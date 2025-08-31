@@ -1,5 +1,4 @@
 (function () {
-  // print hide style
   const style = document.createElement("style");
   style.innerHTML = `
     @media print {
@@ -34,7 +33,6 @@
     const totalCell = row.querySelector(".single_total");
     if (!priceStrong || !qtyStrong || !totalCell) return;
 
-    // ✅ Instead of button, click directly on price
     priceStrong.style.cursor = "pointer";
     priceStrong.title = "Click to edit price";
 
